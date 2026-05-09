@@ -1,0 +1,15 @@
+name: RideScout
+options:
+  bundleIdPrefix: com.ridescout
+targets:
+  RideScout:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources: [RideScout]
+    info:
+      path: RideScout/Info.plist
+      properties:
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
