@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0F4177D532B04D722BDC82CD /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03353C8BA42CEFE8AA640FB /* AnalyticsView.swift */; };
 		15AFDE53A5D9ED3A94AA22AC /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC81F10813AF663328A85220 /* Platform.swift */; };
+		3478CA9ECB00A434E253B9FE /* FilterSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4859CDB5D2F3B0FB63761 /* FilterSheetView.swift */; };
 		383D42453C4B002C3480B72D /* FareResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88148059606F64500A12D5C /* FareResult.swift */; };
 		3F326EA4E57901F7294E5A9E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE645F223247A6D9657DF8D3 /* MainTabView.swift */; };
 		3F61898D188FDDF1FD1C4546 /* FareSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B051394DF8AFDE207A9F40 /* FareSearchViewModel.swift */; };
@@ -32,6 +33,7 @@
 		46B3CAFF951C9D2FE07EDA1B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		62B18514563814861D4A9C96 /* FareResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareResultCard.swift; sourceTree = "<group>"; };
 		AC9877A84B9C56F59F5BB007 /* package.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = package.xcworkspace; sourceTree = "<group>"; };
+		ACE4859CDB5D2F3B0FB63761 /* FilterSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheetView.swift; sourceTree = "<group>"; };
 		AE645F223247A6D9657DF8D3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		B533EDB774EA5AC83F5705B9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BC81F10813AF663328A85220 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				E03353C8BA42CEFE8AA640FB /* AnalyticsView.swift */,
 				46B3CAFF951C9D2FE07EDA1B /* DesignSystem.swift */,
 				62B18514563814861D4A9C96 /* FareResultCard.swift */,
+				ACE4859CDB5D2F3B0FB63761 /* FilterSheetView.swift */,
 				DC77D7A48CBF349CDC925FDD /* HomeView.swift */,
 				AE645F223247A6D9657DF8D3 /* MainTabView.swift */,
 				4617D40233F1740793577B0A /* PlannerView.swift */,
@@ -204,6 +207,7 @@
 				383D42453C4B002C3480B72D /* FareResult.swift in Sources */,
 				D98FFF68C80C00C57D083738 /* FareResultCard.swift in Sources */,
 				3F61898D188FDDF1FD1C4546 /* FareSearchViewModel.swift in Sources */,
+				3478CA9ECB00A434E253B9FE /* FilterSheetView.swift in Sources */,
 				A2D742A16C6D91D82FF353AB /* HomeView.swift in Sources */,
 				3F326EA4E57901F7294E5A9E /* MainTabView.swift in Sources */,
 				985558A4CF81FB55112D3060 /* PlannerView.swift in Sources */,

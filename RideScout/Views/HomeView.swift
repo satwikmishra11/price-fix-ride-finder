@@ -6,6 +6,7 @@ struct HomeView: View {
     @State private var showingNewRide = false
     @State private var selectedFare: String? = nil
     @State private var showingFareAction = false
+    @State private var activeRideBooked = false
     
     var body: some View {
         ZStack(alignment: .top) {
@@ -14,6 +15,31 @@ struct HomeView: View {
             ScrollView {
                 VStack(spacing: 32) {
                     Spacer().frame(height: 80)
+                    
+                    // Live Activity / Dynamic Island Simulation
+                    if activeRideBooked {
+                        LiveActivityBanner(driverName: "Suresh (UberGo)", eta: "3 min", licensePlate: "KA 01 MR 8492")
+                            .transition(.move(edge: .top).combined(with: .opacity))
+                    }
+                    
+                    // Weather Context Banner
+                    HStack {
+                        Image(systemName: "cloud.heavyrain.fill")
+                            .foregroundColor(.blue)
+                            .font(.system(size: 20))
+                        VStack(alignment: .leading) {
+                            Text("Heavy Rain Expected")
+                                .font(.system(size: 13, weight: .bold))
+                                .foregroundColor(.rsOnSurface)
+                            Text("Surge pricing likely to increase by 2.0x in 15 mins.")
+                                .font(.system(size: 11))
+                                .foregroundColor(.rsOnSurfaceVariant)
+                        }
+                        Spacer()
+                    }
+                    .padding()
+                    .glassCard(glowColor: .blue.opacity(0.3))
+                    .padding(.horizontal, 24)
                     
                     // Search Section
                     Button(action: { showingNewRide = true }) {
@@ -123,10 +149,7 @@ struct HomeView: View {
             Alert(title: Text("Location Pinned"), message: Text("Current location saved to quick access."), dismissButton: .default(Text("OK")))
         }
         .sheet(isPresented: $showingAllRoutes) {
-            NavigationView {
-                Text("All Routes & Filters Configuration").navigationTitle("Filters")
-                    .navigationBarItems(trailing: Button("Done") { showingAllRoutes = false })
-            }
+            FilterSheetView()
         }
         .sheet(isPresented: $showingNewRide) {
             NavigationView {
@@ -139,7 +162,9 @@ struct HomeView: View {
                 title: Text("Book \(selectedFare ?? "Ride")?"),
                 message: Text("You will be seamlessly redirected to the target app via universal links."),
                 buttons: [
-                    .default(Text("Confirm Booking")),
+                    .default(Text("Confirm Booking")) {
+                        withAnimation { activeRideBooked = true }
+                    },
                     .cancel()
                 ]
             )
@@ -149,6 +174,45 @@ struct HomeView: View {
     private func handleFareSelection(_ title: String) {
         selectedFare = title
         showingFareAction = true
+    }
+}
+
+struct LiveActivityBanner: View {
+    var driverName: String
+    var eta: String
+    var licensePlate: String
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Driver Arriving")
+                    .font(.system(size: 11, weight: .bold))
+                    .foregroundColor(.rsPrimaryContainer)
+                Text(driverName)
+                    .font(.system(size: 17, weight: .bold))
+                    .foregroundColor(.rsOnSurface)
+            }
+            Spacer()
+            VStack(alignment: .trailing, spacing: 4) {
+                Text(eta)
+                    .font(.system(size: 20, weight: .bold))
+                    .foregroundColor(.rsPrimary)
+                Text(licensePlate)
+                    .font(.system(size: 11, weight: .semibold))
+                    .foregroundColor(.rsOnSurfaceVariant)
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 2)
+                    .background(Color.yellow.opacity(0.2))
+                    .foregroundColor(.yellow)
+                    .cornerRadius(4)
+            }
+        }
+        .padding()
+        .background(Color.black)
+        .cornerRadius(24)
+        .overlay(RoundedRectangle(cornerRadius: 24).stroke(Color.rsPrimary.opacity(0.5), lineWidth: 1))
+        .padding(.horizontal, 16)
+        .shadow(color: .rsPrimary.opacity(0.2), radius: 10, x: 0, y: 5)
     }
 }
 
