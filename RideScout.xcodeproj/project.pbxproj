@@ -13,8 +13,11 @@
 		3F326EA4E57901F7294E5A9E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE645F223247A6D9657DF8D3 /* MainTabView.swift */; };
 		3F61898D188FDDF1FD1C4546 /* FareSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B051394DF8AFDE207A9F40 /* FareSearchViewModel.swift */; };
 		735DA147634E14D77089889E /* SurgeForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B42D3DDB986BE501AB0EAB /* SurgeForecastView.swift */; };
+		985558A4CF81FB55112D3060 /* PlannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617D40233F1740793577B0A /* PlannerView.swift */; };
 		9BAE9026B409E6ED931E34EB /* ProSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8884F102BAD19298B205689 /* ProSubscriptionView.swift */; };
+		9DC7827709790027F6F2AB15 /* DesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B3CAFF951C9D2FE07EDA1B /* DesignSystem.swift */; };
 		A2D742A16C6D91D82FF353AB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77D7A48CBF349CDC925FDD /* HomeView.swift */; };
+		A94BDFF1FA6CF3EF45217B7B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533EDB774EA5AC83F5705B9 /* ProfileView.swift */; };
 		B73C7DB1F67B1D2946C0474E /* package.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = AC9877A84B9C56F59F5BB007 /* package.xcworkspace */; };
 		D98FFF68C80C00C57D083738 /* FareResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B18514563814861D4A9C96 /* FareResultCard.swift */; };
 		EB49BE2AD38FA36054B5BBBE /* RideScoutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D1E7F0D103067789FB8DAD /* RideScoutApp.swift */; };
@@ -25,9 +28,12 @@
 		076AC206CE47D8843856008F /* SurgeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeBadge.swift; sourceTree = "<group>"; };
 		332A7752420BC4BC51F409B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		37D1E7F0D103067789FB8DAD /* RideScoutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideScoutApp.swift; sourceTree = "<group>"; };
+		4617D40233F1740793577B0A /* PlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerView.swift; sourceTree = "<group>"; };
+		46B3CAFF951C9D2FE07EDA1B /* DesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystem.swift; sourceTree = "<group>"; };
 		62B18514563814861D4A9C96 /* FareResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareResultCard.swift; sourceTree = "<group>"; };
 		AC9877A84B9C56F59F5BB007 /* package.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = package.xcworkspace; sourceTree = "<group>"; };
 		AE645F223247A6D9657DF8D3 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B533EDB774EA5AC83F5705B9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BC81F10813AF663328A85220 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		D8884F102BAD19298B205689 /* ProSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSubscriptionView.swift; sourceTree = "<group>"; };
 		DC77D7A48CBF349CDC925FDD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -35,7 +41,7 @@
 		E2B051394DF8AFDE207A9F40 /* FareSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareSearchViewModel.swift; sourceTree = "<group>"; };
 		E5B42D3DDB986BE501AB0EAB /* SurgeForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeForecastView.swift; sourceTree = "<group>"; };
 		E88148059606F64500A12D5C /* FareResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FareResult.swift; sourceTree = "<group>"; };
-		EB59319CCA31B6015BF355E5 /* RideScout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB59319CCA31B6015BF355E5 /* RideScout.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = RideScout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -105,9 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				E03353C8BA42CEFE8AA640FB /* AnalyticsView.swift */,
+				46B3CAFF951C9D2FE07EDA1B /* DesignSystem.swift */,
 				62B18514563814861D4A9C96 /* FareResultCard.swift */,
 				DC77D7A48CBF349CDC925FDD /* HomeView.swift */,
 				AE645F223247A6D9657DF8D3 /* MainTabView.swift */,
+				4617D40233F1740793577B0A /* PlannerView.swift */,
+				B533EDB774EA5AC83F5705B9 /* ProfileView.swift */,
 				D8884F102BAD19298B205689 /* ProSubscriptionView.swift */,
 				E5B42D3DDB986BE501AB0EAB /* SurgeForecastView.swift */,
 				49E0B5C02737A5EDF9ABB2B7 /* Components */,
@@ -151,7 +160,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2610;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 6EF584DB5A5E90F5163FF0BA /* Build configuration list for PBXProject "RideScout" */;
 			developmentRegion = en;
@@ -189,13 +200,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F4177D532B04D722BDC82CD /* AnalyticsView.swift in Sources */,
+				9DC7827709790027F6F2AB15 /* DesignSystem.swift in Sources */,
 				383D42453C4B002C3480B72D /* FareResult.swift in Sources */,
 				D98FFF68C80C00C57D083738 /* FareResultCard.swift in Sources */,
 				3F61898D188FDDF1FD1C4546 /* FareSearchViewModel.swift in Sources */,
 				A2D742A16C6D91D82FF353AB /* HomeView.swift in Sources */,
 				3F326EA4E57901F7294E5A9E /* MainTabView.swift in Sources */,
+				985558A4CF81FB55112D3060 /* PlannerView.swift in Sources */,
 				15AFDE53A5D9ED3A94AA22AC /* Platform.swift in Sources */,
 				9BAE9026B409E6ED931E34EB /* ProSubscriptionView.swift in Sources */,
+				A94BDFF1FA6CF3EF45217B7B /* ProfileView.swift in Sources */,
 				EB49BE2AD38FA36054B5BBBE /* RideScoutApp.swift in Sources */,
 				FF2CE4B01478842CF81FAA29 /* SurgeBadge.swift in Sources */,
 				735DA147634E14D77089889E /* SurgeForecastView.swift in Sources */,
@@ -276,7 +290,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -296,7 +309,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -340,7 +352,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -353,7 +364,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
